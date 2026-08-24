@@ -58,6 +58,8 @@
       "herdr"
       "r"
       "gh"
+      "node"
+      "skills"
     ];
   };
 }
