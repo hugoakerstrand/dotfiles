@@ -12,6 +12,7 @@ in
   home.packages = with pkgs; [
     neovim
     nerd-fonts.hack
+    google-cloud-sdk
   ];
 
   fonts.fontconfig.enable = true;
@@ -78,4 +79,15 @@ home.file.".claude/identity.md".source =
 
 home.file.".claude/CLAUDE.md".source =
   config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/AGENTS.md";
+
+# Multi-account Google Workspace CLI wrappers (see home/bin/gws-acct).
+# ~/.local/bin is already on PATH via home.sessionPath above.
+home.file.".local/bin/gws-acct".source =
+  config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/bin/gws-acct";
+
+home.file.".local/bin/gws-personal".source =
+  config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/bin/gws-personal";
+
+home.file.".local/bin/gws-work".source =
+  config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/bin/gws-work";
 }
