@@ -46,12 +46,14 @@
     enable = true;
     onActivation.cleanup = "zap"; # remove anything not listed here
     onActivation.autoUpdate = true;
+    onActivation.upgrade = true;
     onActivation.extraFlags = [ "--force" ];
     casks = [
       "wezterm"
       "claude-code"
       "quarto"
       "Rectangle"
+      "microsoft-office"
     ];
     brews = [
       "tree"
@@ -60,6 +62,10 @@
       "gh"
       "node"
       "skills"
+      "uv"
+      "air"
+      "prettier"
+      "googleworkspace-cli"
     ];
   };
 }

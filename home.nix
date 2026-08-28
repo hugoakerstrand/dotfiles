@@ -17,13 +17,16 @@ in
   fonts.fontconfig.enable = true;
 
   home.sessionVariables.EDITOR = "nvim";
+  home.sessionPath = [ "${config.home.homeDirectory}/.local/bin" ];
 
   # zsh defaults
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;     # ghost text from history
     syntaxHighlighting.enable = true; # commands turn green when valid
+    defaultKeymap = "viins";          # vi bindings, starting in insert mode like vim
     initContent = ''
+      KEYTIMEOUT=1 # ms to wait after Esc before dropping to normal mode (default 400ms feels laggy)
       bindkey '^f' autosuggest-accept
     '';
     shellAliases = {
