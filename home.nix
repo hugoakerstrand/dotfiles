@@ -90,4 +90,9 @@ home.file.".local/bin/gws-personal".source =
 
 home.file.".local/bin/gws-work".source =
   config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/bin/gws-work";
+
+# Personal Claude Code skills. mkOutOfStoreSymlink so edits in the repo take
+# effect without a rebuild. Coexists with skill-manager symlinks in the same dir.
+home.file.".claude/skills/email-accounts".source =
+  config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.claude/skills/email-accounts";
 }
