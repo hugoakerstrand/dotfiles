@@ -66,6 +66,8 @@
       "air"
       "prettier"
       "googleworkspace-cli"
+      "rust"
+      "imagemagick"
     ];
   };
 }
