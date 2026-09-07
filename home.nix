@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 let
   dotfiles = "${config.home.homeDirectory}/.dotfiles";
@@ -16,6 +16,15 @@ in
   ];
 
   fonts.fontconfig.enable = true;
+
+  # uv-managed CLI tools that have no brew formula or nixpkgs package.
+  # Re-runs on every `./rebuild.sh`, mirroring homebrew's upgrade-on-activation.
+  # Binaries land in ~/.local/bin, already on PATH via home.sessionPath.
+  home.activation.uvTools =
+    lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+      PATH="/opt/homebrew/bin:$PATH"
+      run uv tool install --upgrade data-dict-yaml
+    '';
 
   home.sessionVariables.EDITOR = "nvim";
   home.sessionPath = [ "${config.home.homeDirectory}/.local/bin" ];
