@@ -22,7 +22,7 @@ in
   # Binaries land in ~/.local/bin, already on PATH via home.sessionPath.
   home.activation.uvTools =
     lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-      PATH="/opt/homebrew/bin:$PATH"
+      PATH="/opt/homebrew/bin:${config.home.homeDirectory}/.local/bin:$PATH"
       run uv tool install --upgrade data-dict-yaml
     '';
 
