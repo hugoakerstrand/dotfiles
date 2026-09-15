@@ -1,3 +1,9 @@
+## Authoring CLAUDE.md
+
+- Structured format that enable scanning by human.
+- Don't write long sentences or paragraphs: prefer lists.
+- Write out tree structure in a human-readable way with a short comment next to a directory/ branch
+
 ## README content outline
 The content is to the point and **always** follow this format:
 
