@@ -13,6 +13,7 @@ in
     neovim
     nerd-fonts.hack
     google-cloud-sdk
+    tree-sitter # CLI needed by nvim-treesitter (main branch) to compile parsers
   ];
 
   fonts.fontconfig.enable = true;

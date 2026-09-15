@@ -68,6 +68,11 @@
       "googleworkspace-cli"
       "rust"
       "imagemagick"
+      "hunk"
+      "harfbuzz"
+      "fribidi"
+      "tree-sitter"
+      "tree-sitter-cli"
     ];
   };
 }
