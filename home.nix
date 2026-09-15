@@ -26,6 +26,15 @@ in
       run uv tool install --upgrade data-dict-yaml
     '';
 
+  # npm-managed CLI tools that have no brew formula or nixpkgs package.
+  # ajv-cli is a JSON Schema validator; ajv-formats adds date/email/etc. formats.
+  # Re-runs on every `./rebuild.sh` against the homebrew node from configuration.nix.
+  home.activation.npmTools =
+    lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+      PATH="/opt/homebrew/bin:$PATH"
+      run npm install -g ajv-cli ajv-formats
+    '';
+
   home.sessionVariables.EDITOR = "nvim";
   home.sessionPath = [ "${config.home.homeDirectory}/.local/bin" ];
 
