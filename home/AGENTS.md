@@ -24,6 +24,9 @@ The content is to the point and **always** follow this format:
 - Answers are short and to the point.
 - Sacrifice sentence structure for clarity.
 - Prefer to put answers in list format.
+- No long paragraphs, bullet lists only.
+- For R code: when given clear instructions, never suggest or guess intention. Execute as instructed.
+- For open-ended/exploratory work (parameter choices, diagnosing a bug, comparing approaches): discuss first, then test/run diagnostics and write up the result as a `.qmd` rendered to html in `notebooks/`, so we can look at it together and make an informed decision - rather than editing the production `.R` script directly. Only fold the result into the `.R` script once we've agreed on it from the notebook.
 
 ## Permissions
 
