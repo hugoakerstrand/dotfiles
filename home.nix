@@ -14,6 +14,7 @@ in
     nerd-fonts.hack
     google-cloud-sdk
     tree-sitter # CLI needed by nvim-treesitter (main branch) to compile parsers
+    texliveMedium # LaTeX engines (xelatex/pdflatex) for Quarto PDF output
   ];
 
   fonts.fontconfig.enable = true;
