@@ -49,6 +49,7 @@ in
     initContent = ''
       KEYTIMEOUT=1 # ms to wait after Esc before dropping to normal mode (default 400ms feels laggy)
       bindkey '^f' autosuggest-accept
+      unsetopt BEEP # no bell on failed completion, empty backspace etc.
     '';
     shellAliases = {
       # ".." = "cd ..";
