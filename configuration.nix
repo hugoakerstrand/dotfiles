@@ -73,6 +73,7 @@
       "fribidi"
       "tree-sitter"
       "tree-sitter-cli"
+      "cmake"
     ];
   };
 }
