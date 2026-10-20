@@ -22,7 +22,7 @@
     "skill-creator@claude-plugins-official": true,
     "tidymodels-users@tidymodels-skills": true,
     "tidymodels-developers@tidymodels-skills": true,
-    "electronic-lab-notebook@corcellys": true
+    "scientist-skills@corcellys": true
   },
   "extraKnownMarketplaces": {
     "tidymodels-skills": {

@@ -5,12 +5,14 @@
 - Write out tree structure in a human-readable way with a short comment next to a directory/ branch
 
 ## README content outline
-The content is to the point and **always** follow this format:
+Applies to the README of a GitHub repository. The content is to the point and **always** follow this format:
 
 - Overview: a short paragraph on what this repository contains.
 - Structure: a table of the list structure.
 - Glossary: domain specific terms only.
 - Architectural decisions: considered solutions including disregarding alternatives. 
+
+A README in an ELN experiment folder does not use this outline. It is short and states the purpose and design of the experiment (Purpose, Set up, Analysis).
 
 ## Writing Style
 
@@ -35,6 +37,17 @@ The content is to the point and **always** follow this format:
 ## Git
 
 - Don't add yourself as a co-author in commit messages by default. Ask first before including one for larger commits, or for commits in languages outside my comfort zone.
+
+## Corcellys pipelines
+
+- When setting up a pipeline from `corcellys/pipelines` in one of my ELN entries, set `pins_board` in `_targets.R` to my personal board:
+  - `/Users/hugoakerstrand/corcellys/onedrive/hugoakerstrand/pins`
+- Only in my own ELN entries (`ELN/hugo/`). Never in a lab mate's entry, a scratch copy or a test run.
+- Never commit this path to the pipelines repo. The default there stays `NULL`.
+
+## Graphs
+
+- Graphs use the `brand-graphs` skill, in any folder and any tool.
 
 ## Imports
 - My identity profile from @identity.md
