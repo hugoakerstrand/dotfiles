@@ -28,6 +28,11 @@ A README in an ELN experiment folder does not use this outline. It is short and 
 - Prefer to put answers in list format.
 - No long paragraphs, bullet lists only.
 - For R code: when given clear instructions, never suggest or guess intention. Execute as instructed.
+- R functions follow [R for Data Science 2e, Functions](https://r4ds.hadley.nz/functions.html).
+  - Inputs as arguments, never globals such as `params` or `n` read inside a function
+  - Data arguments first, detail arguments after with defaults
+  - Verb names in snake_case, one job per function
+  - Extract a function once code is copied more than twice
 - For open-ended/exploratory work (parameter choices, diagnosing a bug, comparing approaches): discuss first, then test/run diagnostics and write up the result as a `.qmd` rendered to html in `notebooks/`, so we can look at it together and make an informed decision - rather than editing the production `.R` script directly. Only fold the result into the `.R` script once we've agreed on it from the notebook.
 
 ## Permissions
