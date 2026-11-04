@@ -39,10 +39,6 @@ A README in an ELN experiment folder does not use this outline. It is short and 
 
 - Never modify auto-generated content (explicit and implicit), like CHANGELOG.md, _targets etc.
 
-## Git
-
-- Don't add yourself as a co-author in commit messages by default. Ask first before including one for larger commits, or for commits in languages outside my comfort zone.
-
 ## Corcellys pipelines
 
 - When setting up a pipeline from `corcellys/pipelines` in one of my ELN entries, set `pins_board` in `_targets.R` to my personal board:
