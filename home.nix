@@ -15,6 +15,8 @@ in
     google-cloud-sdk
     tree-sitter # CLI needed by nvim-treesitter (main branch) to compile parsers
     texliveMedium # LaTeX engines (xelatex/pdflatex) for Quarto PDF output
+    luajit # Lua 5.1, as in WoW: syntax check addons with `luajit -b file.lua /dev/null`
+    luajitPackages.luacheck # Lua linter built on luajit (luarocks luacheck fails on brew's Lua 5.5)
   ];
 
   fonts.fontconfig.enable = true;
