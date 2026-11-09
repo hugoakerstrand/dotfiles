@@ -68,5 +68,6 @@
       "**Trusted repo**: /Users/hugoakerstrand/github/hugoakerstrand/corcellys-protocols (working directory) and its remote 'hpsc-history'; visibility unknown, treat as private until confirmed",
       "**Org-specific CLIs**: None configured — quarto, brew, pdftotext seen in this project's usage are standard toolchain, not org-specific"
     ]
-  }
+  },
+  "agentPushNotifEnabled": true
 }
